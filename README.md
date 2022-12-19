@@ -212,8 +212,7 @@ related to the `Guest`:
 ```json
 {
   "id": 1,
-  "name": "Cheese",
-  "ingredients": "Dough, Tomato Sauce, Cheese",
+  "name": "Chett",
   "tickets": [
     {
       "id": 1,
@@ -230,6 +229,9 @@ JSON data, along with the appropriate HTTP status code:
 
 ```json
 {
-  "errors": ["validation errors"]
+  "errors": [
+    "Guest must exist",
+    "Price must be greater than 1"
+   ]
 }
 ```
